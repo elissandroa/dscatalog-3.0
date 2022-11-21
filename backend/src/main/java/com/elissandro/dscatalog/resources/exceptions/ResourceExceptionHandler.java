@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import com.elissandro.dscatalog.services.exceptions.EntityNotFoundException;
 
 @ControllerAdvice
-public class ResourceExcepcionHandler {
+public class ResourceExceptionHandler {
 
 	@ExceptionHandler(EntityNotFoundException.class)
 	public ResponseEntity<StandardError> entityNotFound(EntityNotFoundException e, HttpServletRequest request){
